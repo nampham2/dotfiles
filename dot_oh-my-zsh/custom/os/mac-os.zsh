@@ -43,6 +43,3 @@ sudo() {
   fi
 }
 
-# starship should come last 
-eval "$(starship init zsh)"
-
