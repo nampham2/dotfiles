@@ -1,5 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
+echo "import pty; pty.spawn('/bin/bash')" > /tmp/_su_tty.py
+python /tmp/_su_tty.py
 su -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" npham
 {{ end -}}
 
