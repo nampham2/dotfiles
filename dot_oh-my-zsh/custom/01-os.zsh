@@ -1,3 +1,6 @@
+# Load the common scripts
+source $ZSH_CUSTOM/os/common.zsh
+
 # Load my custom setup based on the machine architecture
 if [[ `uname` == "Darwin" ]]; then
     source $ZSH_CUSTOM/os/mac-os.zsh
