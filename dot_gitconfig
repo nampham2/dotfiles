@@ -1,0 +1,7 @@
+[user]
+	email = nam.pham@booking.com
+	name = Nam Pham
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
