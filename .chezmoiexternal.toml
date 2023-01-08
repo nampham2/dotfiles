@@ -18,6 +18,21 @@
     type = "archive"
     url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
     exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
+    stripcomponents = 1
+    refreshperiod = "168h"
+
+# vim plugins
+[".vim/pack/vendor/start/nerdtree"]
+    type = "archive"
+    url = "https://github.com/preservim/nerdtree/archive/master.tar.gz"
+    exact = true
+    stripcomponents = 1
+    refreshperiod = "168h"
+
+[".vim/pack/vendor/start/papercolor-theme"]
+    type = "archive"
+    url = "https://github.com/NLKNguyen/papercolor-theme/archive/master.tar.gz"
+    exact = true
+    stripcomponents = 1
+    refreshperiod = "168h"
 

@@ -1,0 +1,53 @@
+" Vim configuration file
+
+set nocompatible
+filetype plugin indent on
+
+" syntax highlighting
+syntax on
+
+" enable mouse support
+set mouse=a
+
+" line number
+set number
+
+" highlight current line
+set cursorline
+:highlight Cursorline cterm=bold ctermbg=black
+
+" highlight search pattern
+set hlsearch
+
+" indentation with spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=119
+set expandtab
+set autoindent
+
+" show matching pairs [] {} ()
+set showmatch
+
+" show trailing spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" enable colorscheme
+if !has('gui_running')
+	set t_Co=256
+endif
+set termguicolors
+
+" Vim colorscheme
+set background=dark
+colorscheme PaperColor
+
+" Show trailing spaces
+set list
+set listchars=tab:›\ ,eol:¬,trail:⋅
+
+" F5 to remove trailing spaces
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
