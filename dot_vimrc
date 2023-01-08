@@ -1,27 +1,28 @@
+" The encoding of this file
 scriptencoding utf-8
 set encoding=utf-8
 
-" use advanced vim features
+" Use advanced vim features
 set nocompatible
 filetype plugin indent on
 
-" syntax highlighting
+" Xyntax highlighting
 syntax on
 
-" enable mouse support
-set mouse=a
+" Enable mouse support
+" set mouse=a
 
-" line number
+" Line number
 set number
 
-" highlight current line
+" Highlight current line
 set cursorline
 :highlight Cursorline cterm=bold ctermbg=black
 
-" highlight search pattern
+" Highlight search pattern
 set hlsearch
 
-" indentation with spaces
+" Indentation with spaces
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -29,14 +30,17 @@ set textwidth=119
 set expandtab
 set autoindent
 
-" show matching pairs [] {} ()
+" Show matching pairs [] {} ()
 set showmatch
 
-" show trailing spaces
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+" Show trailing spaces
+set list
+set listchars=tab:›\ ,eol:¬,trail:⋅
 
-" enable colorscheme
+" F5 to remove trailing spaces
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" Enable colorscheme
 if !has('gui_running')
 	set t_Co=256
 endif
@@ -45,11 +49,4 @@ set termguicolors
 " Vim colorscheme
 set background=dark
 colorscheme PaperColor
-
-" Show trailing spaces
-set list
-set listchars=tab:›\ ,eol:¬,trail:⋅
-
-" F5 to remove trailing spaces
-nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
