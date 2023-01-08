@@ -1,5 +1,7 @@
-" Vim configuration file
+scriptencoding utf-8
+set encoding=utf-8
 
+# use advanced vim features
 set nocompatible
 filetype plugin indent on
 
