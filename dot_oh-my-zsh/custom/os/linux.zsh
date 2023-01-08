@@ -1,1 +1,3 @@
-alias ls="ls --color"
+# Custom path
+export PATH="$PATH:$HOME/.local/bin"
+
