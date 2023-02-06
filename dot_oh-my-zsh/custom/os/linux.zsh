@@ -12,3 +12,8 @@ export HTTP_PROXY="$PROXYADDR"
 export HTTPS_PROXY="$PROXYADDR"
 export no_proxy="localhost,127.0.0.1,booking.com"
 
+# Source /etc/profile.d/effective-python.sh
+if [ -f /etc/profile.d/effective-python.sh ]; then
+    source /etc/profile.d/effective-python.sh
+fi
+
