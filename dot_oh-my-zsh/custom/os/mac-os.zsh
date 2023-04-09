@@ -9,7 +9,7 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # GNU coreutils
-export PATH="/opt/homebrew/anaconda3/bin/:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/anaconda3/bin/:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
