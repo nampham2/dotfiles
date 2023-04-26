@@ -30,8 +30,8 @@ function proxy () {
     fi
 }
 
-# Init oh-my-zsh git repo
-function init_omz_git() {
+# Fix oh-my-zsh git repo
+function omz_git_fix() {
     pushd ${OMZ_GIT_DIR} >/dev/null
     if [[ ! "$(git rev-parse --is-inside-work-tree)" =~ "true" ]]; then
         git init && git remote add origin https://github.com/ohmyzsh/ohmyzsh.git && git fetch && git reset --hard origin/master
