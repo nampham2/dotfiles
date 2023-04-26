@@ -1,5 +1,7 @@
 #!/bin/sh
 
+OMZ_GIT_DIR="${HOME}/.oh-my-zsh"
+
 # Configure and unconfigure proxy variables as required by apps
 function proxy () {
     PROXYADDR="http://webproxy.prod.booking.com:3128"
@@ -27,4 +29,16 @@ function proxy () {
         printf "Please use 0/1, on/off, yes/no to turn on/off the proxy environmental variables.\n"
     fi
 }
+
+function init_omz() {
+    pushd ${OMZ_GIT_DIR} >/dev/null
+    if [[ ! "$(git rev-parse --is-inside-work-tree)" =~ "true" ]]; then
+        echo "Fixing oh-my-zsh git repository"
+        git init && git remote add origin https://github.com/ohmyzsh/ohmyzsh.git && git fetch && git reset --hard origin/master
+    fi
+    popd >/dev/null
+}
+
+# Call the defaults
+init_omz
 

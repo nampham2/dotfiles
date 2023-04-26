@@ -1,6 +1,4 @@
 export PATH="$HOME/Dropbox/bin:$PATH"
-# alias vim=nvim
-# alias vi=nvim
 alias ls="ls --color"
 export LS_COLORS="$(vivid -m 8-bit generate molokai)"
 
