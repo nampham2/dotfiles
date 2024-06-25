@@ -21,7 +21,7 @@ function proxy () {
         export no_proxy="localhost,127.0.0.1,booking.com"
         printf "Proxy configured to $PROXYADDR\n"
     else
-	printf "Current proxy settings:\n"
+    printf "Current proxy settings:\n"
         printf "  http_proxy=$http_proxy\n"
         printf "  https_proxy=$https_proxy\n"
         printf "  HTTP_PROXY=$HTTP_PROXY\n"
