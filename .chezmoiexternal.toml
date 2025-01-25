@@ -36,3 +36,8 @@
     stripcomponents = 1
     refreshperiod = "168h"
 
+[".vim/pack/vendor/start/llama"]
+    type = "git-repo"
+    url = "https://github.com/ggml-org/llama.vim.git"
+    refreshperiod = "168h"
+
