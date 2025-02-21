@@ -1,0 +1,8 @@
+.oh-my-zsh/.git/
+.oh-my-zsh/plugins/
+.oh-my-zsh/custom/
+.oh-my-zsh/themes
+.oh-my-zsh/.devcontainer
+.oh-my-zsh/.github
+
+
